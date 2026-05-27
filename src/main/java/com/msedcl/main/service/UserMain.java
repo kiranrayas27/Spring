@@ -11,8 +11,10 @@ public class UserMain {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(
 				SpringConfiguration.class);
 
+		System.out.println("-----------");
 		UserService userService = applicationContext.getBean(UserService.class);
-
+		UserService userService2 = applicationContext.getBean(UserService.class);
+		System.out.println("++++++++++++");
 		userService.createUser("Reema");
 
 		applicationContext.close();

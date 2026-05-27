@@ -9,7 +9,7 @@ import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 import org.aspectj.lang.annotation.Pointcut;
 
-@Component
+//@Component
 @Aspect
 public class LoggingAspect {
 	@Pointcut("execution(void com.msedcl.main.service.UserService.createUser(String))")
